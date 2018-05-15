@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Applify - Coming Soon</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/applify.min.css"/>
+</head>
+<body class="coming-soon" data-fade_in="on-load">
+
+<!-- Main Wrapper -->
+<div class="main" role="main">
+
+	<!-- UI Hero -->
+	<div class="ui-hero hero-lg hero-center ui-tilt ui-gradient-animator">
+		<div class="container">
+
+			<!-- UI App Icon -->
+			<div class="ui-app-icon">
+				<img src="assets/img/logo/applify-app-icon.png" alt="Applify - App Landing HTML Template" data-uhd>
+			</div>
+
+			<!-- Heading -->
+			<h1 class="heading">
+				We Are Launching In
+			</h1>
+			<p class="paragraph">
+				Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmod Tempor Incidi.
+			</p>
+			<!--
+			* UI Counter
+			* Modify the launch date by:
+			* Changing the [data-launch] attribute's value
+			-->
+			<div class="ui-counter" data-launch="Dec 28, 2018 18:37:25">
+				<!-- Days -->
+				<div class="days">
+					<h3 class="value">0</h3>
+					<p class="label">Days</p>
+				</div><!-- Hours -->
+				<div class="hours">
+					<h3 class="value">0</h3>
+					<p class="label">Hours</p>
+				</div><!-- Minutes -->
+				<div class="minutes">
+					<h3 class="value">0</h3>
+					<p class="label">Minutes</p>
+				</div><!-- Seconds -->
+				<div class="seconds">
+					<h3 class="value">0</h3>
+					<p class="label">Seconds</p>
+				</div>
+			</div>
+
+			<!-- Get Notified Card -->
+			<div class="ui-card shadow-xl form-card">
+				<div class="card-header pb-0">
+					<h4 class="heading text-indigo">Get Notified</h4>
+				</div>
+				<div class="card-body">
+					<!-- Form -->
+					<form autocomplete="on" id="sign-up-form" name="sign-up-form">
+						<div class="form-group">
+							<div class="input-group">
+								<!-- Email Input -->
+								<input autocomplete="email" class="input form-control" data-validation="required"
+								       data-validation-error-msg="Please enter your email" name="email"
+								       placeholder="Email">
+								<div class="input-group-append">
+									<!-- Submit Button -->
+									<button class="btn ui-gradient-green btn-sm">Notify Me <span
+											class="fa fa-star"></span></button>
+								</div>
+							</div>
+						</div>
+					</form><!-- Form -->
+				</div>
+			</div>
+
+		</div><!-- .container -->
+	</div><!-- .ui-hero -->
+
+	<div class="section">
+		<div class="actions text-center">
+			<a href="#" class="btn ui-gradient-blue btn-circle shadow-md">
+				<span class="fa fa-facebook"></span>
+			</a>
+			<a href="#" class="btn ui-gradient-peach btn-circle shadow-md">
+				<span class="fa fa-instagram"></span>
+			</a>
+			<a href="#" class="btn ui-gradient-green btn-circle shadow-md">
+				<span class="fa fa-twitter"></span>
+			</a>
+			<a href="#" class="btn ui-gradient-purple btn-circle shadow-md">
+				<span class="fa fa-pinterest"></span>
+			</a>
+		</div>
+	</div>
+
+</div><!-- .main -->
+
+<!-- Scripts -->
+<script src="assets/js/libs/jquery/jquery-3.2.1.min.js"></script>
+<script src="assets/js/libs/form-validator/form-validator.min.js"></script>
+<script src="assets/js/libs/bootstrap.js"></script>
+<script src="assets/js/applify/build/applify.js"></script>
+<!-- UI Counter JS -->
+<script>
+    // Get The Launch Date
+    var launch_date = new Date($('.ui-counter').data('launch')).getTime();
+    // Update Every Second
+    var i = setInterval(function () {
+        // The Current Timestamp
+        var time_stamp = new Date().getTime();
+        // Calculate Time Left
+        var time_left = launch_date - time_stamp;
+        // Calculations
+        var days = Math.floor(time_left / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((time_left % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((time_left % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((time_left % (1000 * 60)) / 1000);
+        // Add Text To Html
+        $('.days .value').text(days);
+        $('.hours .value').text(hours);
+        $('.minutes .value').text(minutes);
+        $('.seconds .value').text(seconds);
+        // If Launcher Is Finished
+        if (time_left < 0) {
+            clearInterval(i);
+            $('.days .value, .hours .value, .minutes .value, .seconds .value').text('00');
+        }
+    }, 1000);
+</script>
+</body>
+</html>
