@@ -1,535 +1,410 @@
-<!doctype html>
-<html lang="zxx">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Applify - App Showcase and SAAS HTML Template</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/applify.min.css"/>
-	<style>
-		.ui-hero.ui-tilt.hero-center img {
-			margin-bottom: -10rem;
-		}
-
-		@media (min-width: 740px) {
-			.ui-hero.ui-tilt.hero-center img {
-				margin-bottom: -15rem;
-			}
-		}
-
-		@media (min-width: 992px) {
-			.ui-hero.ui-tilt.hero-center img {
-				margin-bottom: -20rem;
-			}
-		}
-
-		@media (min-width: 1367px) {
-			.ui-hero.ui-tilt.hero-center img {
-				margin-bottom: -30rem;
-			}
-		}
-
-		.mb {
-			margin-bottom: 2rem;
-		}
-
-		.demo-card {
-			position: relative;
-			height: 260px;
-			overflow: hidden;
-			border-radius: .75rem;
-			z-index: 2;
-			margin-bottom: 1rem;
-			cursor: pointer;
-			transition: box-shadow .35s ease-out;
-		}
-
-		.demo-card img {
-			position: relative;
-			top: 100%;
-			width: 100%;
-			max-width: 100%;
-			height: auto;
-			z-index: 1;
-			transform: translateY(-260px);
-			transition: transform cubic-bezier(0.86, 0, 0.07, 1);
-		}
-
-		.demo-card:hover {
-			box-shadow: 0 12px 22px rgba(0, 9, 128, 0.05), 0 20px 36px rgba(0, 9, 128, 0.075);
-		}
-
-		.demo-card:hover img {
-			transform: translateY(-100%);
-			transition: transform linear;
-		}
-
-		.demo-card.no-anim img,
-		.demo-card.no-anim:hover img {
-			top: 0;
-			transform: translateY(0);
-		}
-
-		@media (max-width: 500px) {
-			.col-6 {
-				width: 100%;
-				float: none;
-			}
-		}
-
-		h5 {
-			display: block;
-		}
-
-		.badge {
-			vertical-align: bottom;
-			font-size: .75rem;
-			display: inline-block;
-			padding: .25rem .45rem;
-		}
-
-		ul {
-			list-style: none;
-			margin-bottom: 0;
-			padding-left: 0;
-		}
-
-		ul li {
-			color: #59687c;
-			font-size: .95rem;
-			line-height: 1.5
-		}
-
-		.demo-container .row {
-			display: -webkit-box;
-			display: -webkit-flex;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-orient: horizontal;
-			-webkit-box-direction: normal;
-			-webkit-flex-direction: row;
-			-ms-flex-direction: row;
-			flex-direction: row;
-			-ms-flex-pack: center;
-			justify-content: center
-		}
-
-		.demo-container .row > div {
-			max-width: 257px;
-		}
-	</style>
+  <title>SonityWolf</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico"/>
+  <meta name="description" content="The Blockc[AI]n Wolf">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
+<body>
 
-<body class="ui-transparent-nav" data-fade_in="on-load">
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="assets/img/logo.png" alt="Global">
+    <p>Sonity</p>
+  </a>
+  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+</div>
 
-<!-- Navbar Fixed + Default -->
-<nav class="navbar navbar-fixed-top transparent bg-indigo">
-	<div class="container">
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="#0">
+            <img src="assets/img/logo.png" alt="Global">
+            <p>Sonity</p>
+          </a>
+          <button class="header--cta cta-2">Join us</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>What?</span></li>
+            <li><span>How?</span></li>
+            <li><span>Who we are?</span></li>
+            <li><span>Join us</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <object id="embedded" data="3JSonity.html" type="">
+                <embed src="3JSonity.html" type="">
+              </object>
+              <div id="banner" class="intro--banner">
+                <h1>Explore<br>Sonity<br>Wolf</h1>
+                <button class="cta">Learn More
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>What is Sonity Wolf?</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item">
+                    <a href="#1">
+                      <div class="slider--item-image">
+                        <img src="assets/img/iphone.jpg" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">Native app for phone</p>
+                      <p class="slider--item-description">
+                          SonityWolf will be natively compatible with Android and iOS, each app 
+                          is going to be also a GPU native node added to the network.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-left">
+                    <a href="#2">
+                      <div class="slider--item-image">
+                        <img src="assets/img/pet.jpg" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">Virtual AI pet Utility Tokens</p>
+                      <p class="slider--item-description">
+                          Sonity originally was an AI Social Community manager python script, 
+                          but we decided to take it to the next level.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#3">
+                      <div class="slider--item-image">
+                        <img src="assets/img/husky vs cat.jpg" alt="Metiew and Smith" style="height:100%">
+                      </div>
+                      <p class="slider--item-title">We are criptokitties <br> With steroids!</p>
+                      <p class="slider--item-description">
+                          Everybody knows that dogs are better that cats, or at least they don’t 
+                          think that they are better that you or want you dead.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#4">
+                      <div class="slider--item-image">
+                        <img src="assets/img/about/synapse.png" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">SynapseGL.network node</p>
+                      <p class="slider--item-description">
+                          Sonity needs high end general computing power, this can be achieved 
+                          with a swarm of phones GPUs that are going to render every single 
+                          gradient of the Blockc[AI]n, and you will get sonity tokens for 
+                          leasing your GPU for this tasks.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item">
+                    <a href="#5">
+                      <div class="slider--item-image">
+                        <img src="assets/img/about/block[ai].png" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Blockc[AI]n technology</p>
+                      <p class="slider--item-description">
+                          Since we need general computing power, not hashing power to power up 
+                          sonity, to achieve our general Sonity AI we want this to be a 
+                          decentralized network, in a nutshell, Sonity is going to be the first 
+                          app to implement a proprietary concept called Proof of Gradient
+                      </p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item">
+                      <a href="#5">
+                        <div class="slider--item-image">
+                          <img src="assets/img/marketplace.png" alt="Alex Nowak">
+                        </div>
+                        <p class="slider--item-title">Marketplace and SDK</p>
+                        <p class="slider--item-description">
+                            You can use and create apps that runs on Sonity-Framework on top of 
+                            SonityWolf.
+                        </p>
+                      </a>
+                    </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner">
+                <br>
+                <br>
+                <h2>Check out our <br>repos!</h2>
+                <a class ="github" href="https://github.com/SonityWolf" target="_blank">
+                    GitHub repos
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                    <span class="btn-background"></span>
+                </a>
+                <!--
+                <a href="#0">Career
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                -->
+                <img src="assets/img/introduction-visual.png" alt="About Us">
+              </div>
+              <h2>Related projects</h2>
+              <div class="about--options">
+                <a href="https://eos.io/" target="_blank">
+                  <h3>EOS</h3>
+                </a>
+                <a href="https://www.tensorflow.org/" target="_blank">
+                  <h3>TensorFlow</h3>
+                </a>
+                <a href="https://www.openmined.org/" target="_blank">
+                  <h3>OpenMined</h3>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Our Founders</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="https://www.linkedin.com/in/henningdekant/" target="_blank">
+                      <div class="slider--item-image">
+                        <img src="assets/img/henningdekant.jpg" alt="Metiew and Smith">
+                      </div>
+                      <p class="slider--item-title">Henning Dekant: <strong>Investor</strong></p>
+                      <p class="slider--item-description">
+                          My passion is to anticipate and facilitate fundamental trends in 
+                          IT that will shape how we do business. I am fascinated with the 
+                          change that blockchain and quantum information technology will 
+                          bring.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                      <a href="https://www.linkedin.com/in/andtek/" target="_blank">
+                        <div class="slider--item-image">
+                          <img src="assets/img/ianandtek.jpg" alt="Victory">
+                        </div>
+                        <p class="slider--item-title">Ian Andtek: <strong>Founder</strong></p>
+                        <p class="slider--item-description">
+                          Art and technology lover, Into Machine Learning, Quantum Machine 
+                          Learning, Quantum computing, Blockchain Development and Music and 
+                          all that unusual combinations.
+                        </p>
+                      </a>
+                    </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="https://www.linkedin.com/in/scott-horlacher-0b5607164/" target="_blank">
+                      <div class="slider--item-image">
+                        <img src="assets/img/scotthorlacher.jpg" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Scott Horlacher: <strong>Developer</strong></p>
+                      <p class="slider--item-description">
+                          Full-stack developer, ghost-writer and all-around creative person Electrical
+                          &amp;Biomedical Engineering graduate with a passion for all things Javascript 
+                          Hands-on experience with IoT &amp; Ethereum, fluent in python.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            <!-- -->
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="hire">
+              <h2>Want to join us?</h2>
+              <!-- checkout formspree.io for easy form setup -->
+              <form class="work-request">
+                <div class="work-request--options">
+                  <span class="options-a">
+                    <input id="opt-1" type="checkbox" value="app design">
+                    <label for="opt-1">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      App Programming
+                    </label>
+                    <input id="opt-2" type="checkbox" value="graphic design">
+                    <label for="opt-2">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Graphic Design
+                    </label>
+                    <input id="opt-3" type="checkbox" value="motion design">
+                    <label for="opt-3">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Motion Design
+                    </label>
+                    <input id="opt-4" type="checkbox" value="app design">
+                    <label for="opt-4">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      UX Design
+                    </label>
+                  </span>
+                  <span class="options-b">
+                    <input id="opt-5" type="checkbox" value="graphic design">
+                    <label for="opt-5">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Blockchain
+                    </label>
+                    <input id="opt-6" type="checkbox" value="motion design">
+                    <label for="opt-6">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Webdesign
+                    </label>
+                    <input id="opt-7" type="checkbox" value="ux design">
+                    <label for="opt-7">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Investment
+                    </label>
+                    <input id="opt-8" type="checkbox" value="webdesign">
+                    <label for="opt-8">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Marketing
+                    </label>
+                    <input id="opt-9" type="checkbox" value="marketing">
+                    <label for="opt-9">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      EOS
+                    </label>
+                  </span>
+                </div>
+                <div class="work-request--information">
+                  <div class="information-name">
+                    <input id="name" type="text" spellcheck="false">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="information-email">
+                    <input id="email" type="email" spellcheck="false">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <input type="submit" value="Send Request">
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>What?</li>
+    <li>How?</li>
+    <li>Who?</li>
+    <li>Join</li>
+  </ul>
+</div>
 
-		<!-- Navbar Logo -->
-		<a class="ui-variable-logo navbar-brand" href="index.html" title="Applify - App Landing HTML Template">
-			<!-- Default Logo -->
-			<img class="logo-default" src="assets/img/logo/applify-logo-white.png"
-			     alt="Applify - App Landing HTML Template" data-uhd>
-			<!-- Transparent Logo -->
-			<img class="logo-transparent" src="assets/img/logo/applify-logo-white.png"
-			     alt="Applify - App Landing HTML Template" data-uhd>
-		</a><!-- .navbar-brand -->
-
-		<!-- Navbar Button -->
-		<a href="https://themeforest.net/item/applify-app-landing-page-html/20000720"
-		   class="btn btn-sm ui-gradient-peach pull-right">Get Started</a>
-
-	</div><!-- .container -->
-</nav> <!-- nav -->
-
-<!-- Main Wrapper -->
-<div class="main" role="main">
-
-	<!-- Hero With Background -->
-	<div class="ui-hero hero-lg hero-center bg-indigo ui-tilt hero-svg-layer svg-layer-2">
-		<div class="container">
-			<h1 class="heading animate" data-show="fade-in-up-big" data-delay="100">
-				Welcome to Applify.<br>
-				Vibrant. New. Fun!
-			</h1>
-			<div class="actions animate" data-show="fade-in-up-big" data-delay="600">
-				<a href="#" class="btn ui-gradient-green shadow-xl" data-scrollto="demos">Demos</a>
-				<a href="https://themeforest.net/item/applify-app-landing-page-html/20000720"
-				   class="btn ui-gradient-peach shadow-xl">Get Started</a>
-			</div>
-			<img src="assets/img/demos/applify-demos-hero.png" alt="Applify - App Landing Page HTML Template" data-uhd
-			     data-max_width="1000" class="responsive-on-lg"/>
-		</div><!-- .container -->
-	</div><!-- .ui-hero -->
-
-	<!-- Demos Section -->
-	<div id="demos" class="section pt-2">
-		<div class="container">
-			<div class="section-heading center">
-				<h2 class="heading text-indigo">
-					Niche Websites
-				</h2>
-				<p class="paragraph">
-					Applify comes with 3 pre-built niche demos.
-				</p>
-			</div>
-		</div>
-		<div class="container text-center demo-container">
-			<div class="row">
-				<div class="col-md-3 col-6 mb">
-					<div class="ui-card  demo-card shadow-md" data-target="demo-mobile-app-1.html">
-						<img src="assets/img/demos/applify-demo-mobile-app-1.png"
-						     alt="Applify - App Landing HTML Template" class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="demo-mobile-app-1.html">
-						<h5>Mobile App 1 <span class="badge badge-primary">New</span></h5>
-						<!--<ul>
-							<li>One Page</li>
-							<li>Purple Gradient</li>
-							<li>Slider Hero</li>
-							<li>Hero Waves with SVG Layer</li>
-							<li>Tabbed Showcase</li>
-							<li>App Screens Carousel</li>
-							<li>Blog Section</li>
-							<li>Footer with Sign-Up</li>
-						</ul>-->
-					</a>
-				</div>
-				<div class="col-md-3 col-6 mb">
-					<div class="ui-card  demo-card shadow-md" data-target="demo-mobile-app-2.html">
-						<img src="assets/img/demos/applify-demo-mobile-app-2.png"
-						     alt="Applify - App Landing HTML Template" class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="demo-mobile-app-2.html">
-						<h5>Mobile App 2 <span class="badge badge-primary">New</span></h5>
-						<!--<ul>
-							<li>One Page</li>
-							<li>Purple Gradient</li>
-							<li>Slider Hero</li>
-							<li>Footer with Sign-Up</li>
-							<li>Blog Page</li>
-						</ul>-->
-					</a>
-				</div>
-				<div class="col-md-3 col-6 mb" data-delay="400">
-					<div class="ui-card  demo-card shadow-md" data-target="demo-saas.html">
-						<img src="assets/img/demos/applify-demo-saas.png" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="demo-saas.html">
-						<h5>SAAS <span class="badge badge-primary">New</span></h5>
-						<!--<ul>
-							<li>Multi Page</li>
-							<li>Blue Gradient</li>
-							<li>Hero With SVG LAyers</li>
-							<li>Full Footer</li>
-							<li>API Docs Page</li>
-							<li>Pricing Page</li>
-						</ul>-->
-					</a>
-				</div>
-				<div class="col-md-3 col-6 mb" data-delay="200">
-					<div class="ui-card  demo-card shadow-md" data-target="demo-web-app.html">
-						<img src="assets/img/demos/applify-demo-web-app.png" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="demo-web-app.html">
-						<h5>Web App <span class="badge badge-primary">New</span></h5>
-						<!--<ul>
-							<li>Multi Page</li>
-							<li>Peach Gradient</li>
-							<li>Hero With Form Field </li>
-							<li>Full Footer</li>
-							<li>Pricing Page</li>
-							<li>Blog Page</li>
-						</ul>-->
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Classic Demos Section -->
-	<div class="section bg-light">
-		<div class="container text-center demo-container">
-			<div class="section-heading center">
-				<h2 class="heading text-indigo">
-					Classic Demos
-				</h2>
-			</div>
-			<div class="row">
-				<div class="col-md-3 col-6 mb">
-					<div class="ui-card  demo-card shadow-md" data-target="demo-hero-slider.html">
-						<img src="assets/img/demos/demo-slider.jpg" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="demo-hero-slider.html">
-						<h5>Slider Hero</h5>
-					</a>
-				</div>
-				<div class="col-md-3 col-6 mb" data-delay="200">
-					<div class="ui-card  demo-card shadow-md" data-target="demo-hero-waves.html">
-						<img src="assets/img/demos/demo-waves.jpg" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="demo-hero-waves.html">
-						<h5>Waves Hero</h5>
-					</a>
-				</div>
-				<div class="col-md-3 col-6 mb" data-delay="400">
-					<div class="ui-card  demo-card shadow-md" data-target="demo-hero-curve.html">
-						<img src="assets/img/demos/demo-curved.jpg" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="demo-hero-curve.html">
-						<h5>Curve Hero</h5>
-					</a>
-				</div>
-				<div class="col-md-3 col-6 mb" data-delay="600">
-					<div class="ui-card  demo-card shadow-md" data-target="demo-hero-tilt.html">
-						<img src="assets/img/demos/demo-tilted.jpg" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="demo-hero-tilt.html">
-						<h5>Tilt Hero</h5>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Inner Pages Section -->
-	<div class="section bg-gray">
-		<div class="container">
-			<div class="section-heading center">
-				<h2 class="heading text-indigo">
-					Inner Pages
-				</h2>
-				<p class="paragraph">
-					Applify comes with 4 additional pages.
-				</p>
-			</div>
-		</div>
-		<div class="container text-center demo-container">
-			<div class="row">
-				<div class="col-md-3 col-6 mb">
-					<div class="ui-card  demo-card shadow-md" data-target="page-api-docs.html">
-						<img src="assets/img/demos/applify-demo-api-docs.png" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="page-api-docs.html">
-						<h5 class="heading">API Docs <span class="badge badge-primary">New</span></h5>
-					</a>
-				</div>
-				<div class="col-md-3 col-6 mb">
-					<div class="ui-card  demo-card shadow-md" data-target="page-pricing.html">
-						<img src="assets/img/demos/applify-demo-pricing.png" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="page-pricing.html">
-						<h5 class="heading">Pricing Plans <span class="badge badge-primary">New</span></h5>
-					</a>
-				</div>
-				<div class="col-md-3 col-6 mb" data-delay="200">
-					<div class="ui-card  demo-card shadow-md" data-target="page-contact.html">
-						<img src="assets/img/demos/applify-demo-contact.png" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="page-contact.html">
-						<h5 class="heading">Contact Page <span class="badge badge-primary">New</span></h5>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Blog Pages Section -->
-	<div class="section bg-light">
-		<div class="container text-center demo-container">
-			<div class="section-heading center">
-				<h2 class="heading text-indigo">
-					Blog Pages With Sidebar
-				</h2>
-			</div>
-			<div class="row mb-4">
-				<div class="col-md-3 col-6 mb">
-					<div class="ui-card  demo-card shadow-md" data-target="page-blog-right-sidebar.html">
-						<img src="assets/img/demos/blog.jpg" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="page-blog-right-sidebar.html">
-						<h5>Blog Sidebar Right</h5>
-					</a>
-				</div>
-				<div class="col-md-3 col-6 mb">
-					<div class="ui-card  demo-card shadow-md" data-target="page-blog-left-sidebar.html">
-						<img src="assets/img/demos/blog.jpg" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="page-blog-left-sidebar.html">
-						<h5>Blog Sidebar Left</h5>
-					</a>
-				</div>
-				<div class="col-md-3 col-6 mb" data-delay="400">
-					<div class="ui-card  demo-card shadow-md" data-target="page-blog-post-right-sidebar.html">
-						<img src="assets/img/demos/blog-post.jpg" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="page-blog-post-right-sidebar.html">
-						<h5>Blog Post Sidebar Right</h5>
-					</a>
-				</div>
-				<div class="col-md-3 col-6 mb" data-delay="400">
-					<div class="ui-card  demo-card shadow-md" data-target="page-blog-post-left-sidebar.html">
-						<img src="assets/img/demos/blog-post.jpg" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="page-blog-post-left-sidebar.html">
-						<h5>Blog Post Sidebar Left</h5>
-					</a>
-				</div>
-			</div>
-
-			<div class="section-heading center">
-				<h2 class="heading text-indigo">
-					Blog Pages Without Sidebar
-				</h2>
-			</div>
-			<div class="row">
-				<div class="col-md-3 col-6 mb" data-delay="200">
-					<div class="ui-card  demo-card shadow-md" data-target="page-blog-grid.html">
-						<img src="assets/img/demos/blog-grid.jpg" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="page-blog-grid.html">
-						<h5>Blog Grid</h5>
-					</a>
-				</div>
-				<div class="col-md-3 col-6 mb" data-delay="400">
-					<div class="ui-card  demo-card shadow-md" data-target="page-blog-post.html">
-						<img src="assets/img/demos/blog-post.jpg" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd/>
-					</div>
-					<a target="_blank" href="page-blog-post.html">
-						<h5>Blog Post</h5>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Other Pages Section -->
-	<div class="section">
-		<div class="container">
-			<div class="section-heading center">
-				<h2 class="heading text-indigo">
-					Additional Pages
-				</h2>
-				<p class="paragraph">
-					Applify comes with 2 additional pages for those rare occasion.
-				</p>
-			</div>
-		</div>
-		<div class="container text-center demo-container">
-			<div class="row">
-				<div class="col-md-3 col-6 mb" data-delay="200">
-					<div class="ui-card  demo-card shadow-md" data-target="page-coming-soon.html"
-					     style="height: 230px;">
-						<img src="assets/img/demos/applify-demo-coming-soon.png"
-						     alt="Applify - App Landing HTML Template" class="img-responsive" data-uhd
-						     style="transform: translateY(-230px);"/>
-					</div>
-					<a target="_blank" href="page-coming-soon.html">
-						<h5 class="heading">Coming Soon </h5>
-					</a>
-				</div>
-				<div class="col-md-3 col-6 mb" data-delay="400">
-					<div class="ui-card  demo-card shadow-md" data-target="page-404.html" style="height: 230px;">
-						<img src="assets/img/demos/applify-demo-404.png" alt="Applify - App Landing HTML Template"
-						     class="img-responsive" data-uhd style="transform: translateY(-230px);"/>
-					</div>
-					<a target="_blank" href="page-404.html">
-						<h5 class="heading">Error 404 <span class="badge badge-primary">New</span></h5>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Basic Footer -->
-	<footer class="ui-footer">
-		<!-- Footer Copyright -->
-		<div class="footer-copyright bg-dark-gray">
-			<div class="container">
-				<div class="row">
-					<!-- Copyright -->
-					<div class="col-6">
-						<p>
-							&copy; 2017 <a href="htpp://codeytech.com" target="_blank" title="Codeytech">Codeytech</a>
-							All Rights Reserved
-						</p>
-					</div>
-					<!-- Social Icons -->
-					<div class="col-6 text-right">
-						<a class="btn ui-gradient-blue btn-circle shadow-md">
-							<span class="fa fa-facebook"></span>
-						</a>
-						<a class="btn ui-gradient-peach btn-circle shadow-md">
-							<span class="fa fa-instagram"></span>
-						</a>
-						<a class="btn ui-gradient-green btn-circle shadow-md">
-							<span class="fa fa-twitter"></span>
-						</a>
-						<a class="btn ui-gradient-purple btn-circle shadow-md">
-							<span class="fa fa-pinterest"></span>
-						</a>
-					</div>
-				</div>
-			</div><!-- .container -->
-		</div><!-- .footer-copyright -->
-	</footer><!-- .ui-footer -->
-</div><!-- .main -->
-
-<!-- Scripts -->
-<script src="assets/js/libs/jquery/jquery-3.2.1.min.js"></script>
-<script src="assets/js/libs/bootstrap.js"></script>
-<script>
-    $('.demo-card').on('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        var $target = $(this).attr('data-target');
-        window.open(
-            $target,
-            '_blank'
-        );
-    });
-</script>
-<script src="assets/js/applify/build/applify.js"></script>
-<script>
-    $(window).on('resize', function () {
-        demoCards();
-    });
-
-    function demoCards() {
-        $('.demo-card').each(function () {
-            var $this = $(this);
-            var conH = $this.height();
-            var imgH = $this.children('img').height();
-            var animDur = ((imgH / conH) - 1) * 1.25;
-            $this
-                .mouseover(function () {
-                    $this.children('img').css({
-                        'transition-duration': animDur + 's'
-                    });
-                })
-                .mouseout(function () {
-                    $this.children('img').css({
-                        'transition-duration': '1s'
-                    });
-                });
-        });
-    }
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
 </body>
 </html>
