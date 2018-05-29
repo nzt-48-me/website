@@ -48,11 +48,6 @@ video#bgvideo{
     background-size:cover;
     transition: 1s opacity;
 }
-.stopfade { opacity: .5; }
-#vidpause{
-    background: #000;
-    border-style: none;
-}
 @media screen and (min-width:768px) {
     #vidpause{
         display:none;

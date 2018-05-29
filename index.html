@@ -25,9 +25,7 @@
 <div class="perspective effect-rotate-left">
   <div class="container"><div class="outer-nav--return"></div>
     <div id="viewport" class="l-viewport">
-        <video id="bgvideo" autoplay loop muted>
-            <source src="assets/video/Rotating Brain Conference.mp4" type="video/mp4">
-          </video>
+        <video id="bgvideo" autoplay loop muted src="assets/video/Rotating Brain Conference.mp4"></video>
           <button id="vidpause">Pause Video</button>
       <div class="l-wrapper">
         <header class="header">
@@ -351,34 +349,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
-<script>
-  var vid = document.getElementById("bgvideo"),
-      pauseButton = document.getElementById("vidpause");
-    if (window.matchMedia('(prefers-reduced-motion)').matches) {
-      vid.removeAttribute("autoplay");
-      vid.pause();
-      pauseButton.innerHTML = "Video Paused";
-    }
-    function vidFade() {
-        vid.classList.add("stopfade");
-      }
-      vid.addEventListener('ended', function () {
-        // only functional if "loop" is removed 
-        vid.pause();
-        // to capture IE10
-        vidFade();
-      });
-      pauseButton.addEventListener("click", function () {
-        vid.classList.toggle("stopfade");
-        if (vid.paused) {
-          vid.play();
-          pauseButton.innerHTML = "Pause Video";
-        } else {
-          vid.pause();
-          pauseButton.innerHTML = "Video Paused";
-        }
-      })
-</script>
 
 </body>
 </html>
