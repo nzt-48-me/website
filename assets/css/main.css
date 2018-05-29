@@ -40,8 +40,23 @@ video#bgvideo{
     min-height:100%;
     width:auto;
     height:auto;
-    background:#000;
-    position: absolute;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index:-100;
+    background-size:cover;
+    transition: 1s opacity;
+}
+.stopfade { opacity: .5; }
+#vidpause{
+    background: #000;
+    border-style: none;
+}
+@media screen and (min-width:768px) {
+    #vidpause{
+        display:none;
+    }
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
     display:block
