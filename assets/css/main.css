@@ -35,8 +35,13 @@ html{
 body{
     margin:0
 }
-#viewport {
-    background: #000
+video#bgvideo{
+    min-width:100%;
+    min-height:100%;
+    width:auto;
+    height:auto;
+    background:#000;
+    position: absolute;
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
     display:block
