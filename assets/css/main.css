@@ -36,7 +36,7 @@ body{
     margin:0
 }
 #containvid{
-    height:75%;
+    height:70%;
     z-index:-100;
     position:fixed;
     top:50%;
