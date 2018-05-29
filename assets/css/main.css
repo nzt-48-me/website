@@ -35,7 +35,7 @@ html{
 body{
     margin:0
 }
-video#bgvideo{
+#bgvideo{
     min-width:100%;
     min-height:100%;
     width:auto;
@@ -47,11 +47,6 @@ video#bgvideo{
     z-index:-100;
     background-size:cover;
     transition: 1s opacity;
-}
-@media screen and (min-width:768px) {
-    #vidpause{
-        display:none;
-    }
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
     display:block
