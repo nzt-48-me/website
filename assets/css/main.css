@@ -407,6 +407,13 @@ body{
     text-decoration:none;
     color:#fff
 }
+.header--logo img{
+    transition: all .5s ease-in-out;
+}
+.header--logo img:hover{
+    transform: scale(1.5);
+    transition: all .5s ease-in-out;
+}
 .header--logo p{
     margin:0 0 0 10px;
     font-size:16px;
