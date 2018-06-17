@@ -235,7 +235,7 @@
             <div class="hire">
               <h2>Want to join us?</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form id="formjoin" class="work-request" action="https://docs.google.com/forms/d/e/1FAIpQLSdS1EELUqc9jXTbhi7L9axxa5fycFqHD7Q3DrYd7Gs6LnZhGQ/formResponse?" target="hidden_iframe">
+              <form id="formjoin" class="work-request" action="https://docs.google.com/forms/d/e/1FAIpQLSdS1EELUqc9jXTbhi7L9axxa5fycFqHD7Q3DrYd7Gs6LnZhGQ/formResponse?" target="hidden_iframe" onsubmit="this.submit(); this.reset(); return false;">
                 <div class="work-request--options">
                   <span class="options-a">
                     <input id="entry.942367143" name="entry.942367143" type="checkbox" value="true">
@@ -368,7 +368,6 @@
   $('#formjoin').on('submit', function(e) {
     $('#formjoin *').fadeOut(2000);
     $('#formjoin').prepend('Your submission has been processed...');
-    $('#formjoin').trigger("reset");
   });
 </script>
 </body>
