@@ -368,7 +368,7 @@
   $('#formjoin').on('submit', function(e) {
     $('#formjoin *').fadeOut(2000);
     $('#formjoin').prepend('Your submission has been processed...');
-    $('#formjoin').reset();
+    $('#formjoin').trigger("reset");
   });
 </script>
 </body>
